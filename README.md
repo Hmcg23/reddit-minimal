@@ -4,7 +4,8 @@
 
 ## **A Reddit clone that simplifies the Reddit experience. This is also Codecademy Portfolio Project.**
 
-<img src="./public/prototype-screenshot.png"/>
+<img src="./src/images/prototype-screenshot.png"/>
+
 
 </div>
 
