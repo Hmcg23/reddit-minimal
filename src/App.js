@@ -22,34 +22,68 @@ function App() {
       </nav>
 
       <body>
-        <br />
-        <section className="post">
-          <div className="upvote-system">
-            <img src={arrow} alt="upvote-arrow" className="arrow" />
-            <b>256</b>
-            <img src={arrow} alt="upvote-arrow" className="arrow" />
-          </div>
-
-        <div className="post-info">
-          <div className="post-text">
-            <h2>Top 10 greatest <a href="https://scratch.mit.edu/projects/677407763/" target="_blank">scratch intros</a></h2>
-            <hr />            
-          </div>
-
-          <div className="user-info">
-            <p>fenyx</p>
-            <p>2 days ago</p>
-            <div className="messages">
-              <img src={messageicon} alt="message icon" className="message-icon" />
-              <p>3 comments</p>   
+        <main>
+        <div className="all-posts">
+          <section className="post">
+            <div className="upvote-system">
+              <img src={arrow} alt="upvote-arrow" className="arrow" />
+              <b>256</b>
+              <img src={arrow} alt="upvote-arrow" className="arrow" />
             </div>
-      
-          </div>          
+
+          <div className="post-info">
+            <div className="post-text">
+              <h2>Top 10 greatest <a href="https://scratch.mit.edu/projects/677407763/" target="_blank">scratch intros</a></h2>
+              <hr />            
+            </div>
+
+            <div className="user-info">
+              <p>fenyx</p>
+              <p>2 days ago</p>
+              <div className="messages">
+                <img src={messageicon} alt="message icon" className="message-icon" />
+                <p>3 comments</p>   
+              </div>
+            </div>          
+          </div>
+          </section>          
         </div>
 
-        </section>
-      </body>
 
+          <section className="subreddit-section">
+            <h1>Subreddits</h1>
+            <div className="subreddit">
+              <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
+              <h2>r/exampletext</h2>
+            </div>
+            <div className="subreddit">
+              <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
+              <h2>r/exampletext</h2>
+            </div>
+            <div className="subreddit">
+              <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
+              <h2>r/exampletext</h2>
+            </div>
+            <div className="subreddit">
+              <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
+              <h2>r/exampletext</h2>
+            </div>
+            <div className="subreddit">
+              <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
+              <h2>r/exampletext</h2>
+            </div>
+            <div className="subreddit">
+              <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
+              <h2>r/exampletext</h2>
+            </div>
+            <div className="subreddit">
+              <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
+              <h2>r/exampletext</h2>
+            </div>
+          </section>
+
+        </main>
+      </body>
     </div>
   );
 }

@@ -34,6 +34,7 @@ hr {
   justify-content: center;
   background-color: #2e2e2e;
   box-shadow: 10px 10px 20px #1c1c1c;
+  margin-bottom: 20px;
 
 }
 
@@ -87,10 +88,16 @@ hr {
 
 /* Reddit Post */
 
+.all-posts {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-right: 1.5vw;
+}
+
 .post {
   display: flex;
   background-color: #2651c6ca;
-  width: 70%;
   margin: 0 2vw;
   padding: 2vw;
   border-radius: 25px;
@@ -140,4 +147,31 @@ hr {
 
 .other-info p {
   padding: 0 100px;
+}
+
+/* Subreddit System */
+
+main {
+  display: flex;
+}
+
+.subreddit-section {
+  max-width: 20%;
+}
+
+.subreddit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #2651c6ca;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-size: 1.2vw;
+}
+
+.subreddit-logo {
+  max-width: 15%;
+  border-radius: 100%;
+  margin: 0 1vw;
 }
