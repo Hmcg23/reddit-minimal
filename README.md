@@ -6,7 +6,6 @@
 
 <img src="./src/images/prototype-screenshot.png"/>
 
-
 </div>
 
 ## 🥇 Features

@@ -1,6 +1,6 @@
 import React from 'react';
 import redditlogo from './images/redditlogo.png';
-import messageicon from './images/messageicon.svg';
+import searchicon from './images/searchicon.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 
@@ -13,11 +13,14 @@ function App() {
           <h1><em>Reddit<span>Minimal</span></em></h1>          
         </div>
         <div className="right-side">
-          <img src={messageicon} alt="search icon" className="message-icon" />
+          <img src={searchicon} alt="search icon" className="search-icon" />
           <h2 className="text">Search</h2>     
         </div>
-
       </nav>
+      <body>
+        <br />
+        <h1>Hello all!</h1>
+      </body>
     </div>
   );
 }
