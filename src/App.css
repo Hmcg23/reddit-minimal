@@ -13,6 +13,14 @@ h1 {
   font-size: calc(0.5vw + 20px);
 }
 
+a {
+  color: #5270C3;
+}
+
+hr {
+  border: 1px solid #2e2e2e;
+}
+
 .App {
   text-align: center;
   color: white;
@@ -26,7 +34,6 @@ h1 {
   justify-content: center;
   background-color: #2e2e2e;
   box-shadow: 10px 10px 20px #1c1c1c;
-  position: fixed;
 
 }
 
@@ -76,4 +83,61 @@ h1 {
   .reddit-logo {
     max-width: 10%;
   }
+}
+
+/* Reddit Post */
+
+.post {
+  display: flex;
+  background-color: #2651c6ca;
+  width: 70%;
+  margin: 0 2vw;
+  padding: 2vw;
+  border-radius: 25px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.post-text {
+  width: 100%;
+  text-align: left;
+}
+
+
+.upvote-system {
+  margin: 0 2vw;
+}
+
+.upvote-system :nth-child(3) {
+  transform: rotateZ(180deg);
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-icon {
+  max-width: 30%;
+  padding: 0 1vw;
+  filter: invert(100%) sepia(0%) saturate(3803%) hue-rotate(188deg) brightness(108%) contrast(111%);
+}
+
+.arrow {
+  filter: invert(100%) sepia(0%) saturate(3803%) hue-rotate(188deg) brightness(108%) contrast(111%);
+}
+
+.messages {
+  display: flex;
+  justify-content: end;
+}
+
+.other-info p {
+  padding: 0 100px;
 }
