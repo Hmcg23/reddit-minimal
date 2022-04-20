@@ -97,8 +97,8 @@ hr {
 
 .post {
   display: flex;
-  background-color: #2651c6ca;
-  margin: 0 2vw;
+  background-color: rgba(38, 81, 198, 0.792);
+  margin: 1vw;
   padding: 2vw;
   border-radius: 25px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
@@ -111,6 +111,11 @@ hr {
   width: 100%;
 }
 
+.post-image {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
 .post-text {
   width: 100%;
   text-align: left;
@@ -118,7 +123,7 @@ hr {
 
 
 .upvote-system {
-  margin: 0 2vw;
+  margin-right: 2vw;
 }
 
 .upvote-system :nth-child(3) {
@@ -163,7 +168,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  background-color: #2651c6ca;
+  background-color: rgba(38, 81, 198, 0.792);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   margin-bottom: 15px;

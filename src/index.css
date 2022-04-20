@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: radial-gradient(#2e2e2ee4, #2e2e2ee4), 
-  url(./images/bg-image.jpeg) no-repeat center center fixed; 
+  url(./images/bgimage.jpeg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
