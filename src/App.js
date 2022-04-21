@@ -28,9 +28,9 @@ function App() {
           <section className="post">
             {/* Upvote Section */}
             <div className="upvote-system">
-              <img src={arrow} alt="upvote-arrow" className="arrow" />
+              <img src={arrow} alt="upvote-arrow" className="up-arrow" />
               <b>256</b>
-              <img src={arrow} alt="upvote-arrow" className="arrow" />
+              <img src={arrow} alt="upvote-arrow" className="down-arrow" />
             </div>
 
           <div className="post-info">
@@ -52,9 +52,9 @@ function App() {
           </section>
           <section className="post">
             <div className="upvote-system">
-              <img src={arrow} alt="upvote-arrow" className="arrow" />
+              <img src={arrow} alt="upvote-arrow" className="up-arrow" />
               <b>12.2k</b>
-              <img src={arrow} alt="upvote-arrow" className="arrow" />
+              <img src={arrow} alt="upvote-arrow" className="down-arrow" />
             </div>
 
           <div className="post-info">
@@ -80,7 +80,7 @@ function App() {
             <h1>Subreddits</h1>
             <div className="subreddit">
               <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
-              <h2>r/exampletext</h2>
+              <h2>Home</h2>
             </div>
             <div className="subreddit">
               <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
