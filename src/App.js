@@ -25,6 +25,7 @@ function App() {
       <body>
         <main>
         <div className="all-posts">
+          <div className="margin"></div>
           <section className="post">
             {/* Upvote Section */}
             <div className="upvote-system">
@@ -77,6 +78,7 @@ function App() {
         </div>
         {/* Subreddit  */}
           <section className="subreddit-section">
+          <div className="margin-subreddit"></div>
             <h1>Subreddits</h1>
             <div className="subreddit">
               <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
