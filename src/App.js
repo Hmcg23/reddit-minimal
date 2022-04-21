@@ -26,6 +26,7 @@ function App() {
         <main>
         <div className="all-posts">
           <section className="post">
+            {/* Upvote Section */}
             <div className="upvote-system">
               <img src={arrow} alt="upvote-arrow" className="arrow" />
               <b>256</b>
@@ -106,7 +107,6 @@ function App() {
               <h2>r/exampletext</h2>
             </div>
           </section>
-
         </main>
       </body>
     </div>
