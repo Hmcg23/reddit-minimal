@@ -6,7 +6,7 @@ import Subreddits from './components/Subreddits';
 import Nav from './components/Nav';
 import Posts from './components/Posts';
 // react router
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -15,7 +15,10 @@ function App() {
         <body>
           <Nav />
           <main>
-            <Posts />
+            <Routes>
+              <Route path="/" element={<Posts />} />
+              <Route path="/pagenotfound" element={<PageNotFound />} />
+            </Routes>
             <Subreddits />
           </main>
         </body>
