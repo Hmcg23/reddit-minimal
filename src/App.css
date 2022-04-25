@@ -254,11 +254,13 @@ main {
   max-width: 100%;
   justify-content: space-between;
   padding: 0 1vw;
+  font-size: 1vw;
 }
 
 .comment p {
   text-align: left;
-  padding: 1vw
+  padding: 0 1vw;
+  font-size: 1vw;
 }
 
 .comment:hover {
@@ -266,20 +268,6 @@ main {
 }
 
 /* Media Queries - Keep Last */
-
-@media screen and (max-width: 600px) {
-  .text {
-    font-size: 4vw;
-    border: 0.5vw solid #2651c6;
-  }
-  h1 {
-    font-size: calc(0.5vw + 15px);
-  }
-  .reddit-logo {
-    max-width: 10%;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .subreddit-section {
     max-width: 30%;
@@ -298,6 +286,13 @@ main {
     font-size: 2vw;
   }
   b {
+    font-size: 2vw;
+  }
+  .comment p {
+    font-size: 1.5vw;
+  }
+  input {
+    padding: 5%;
     font-size: 2vw;
   }
 }
@@ -325,14 +320,14 @@ main {
     transform: translateX(50%);
     justify-content: center;
     margin-bottom: 2vw;
-    font-size: 3vw;
+    font-size: 2vw;
   }
   .subreddit-section h1 {
     transform: translateX(50%);
     font-size: 6vw;
   }
-  .margin {
-    margin-top: 18vw;
+  .subreddit-logo {
+    max-width: 15%;
   }
   .margin-subreddit {
     margin: 0;
@@ -346,5 +341,31 @@ main {
   .no-posts {
     width: 100%;
   }
+  .comment-info {
+    font-size: 1.5vw;
+  }
+  .comment p {
+    font-size: 2.5vw;
+  }
+  input {
+    padding: 5%;
+    font-size: 3vw;
+    margin: 2vw;
+  }
+  .search-icon {
+    max-width: 15%;
+  }
 }
 
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 4vw;
+    border: 0.5vw solid #2651c6;
+  }
+  h1 {
+    font-size: calc(0.5vw + 15px);
+  }
+  .reddit-logo {
+    max-width: 10%;
+  }
+}

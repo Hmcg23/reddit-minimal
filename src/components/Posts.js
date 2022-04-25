@@ -11,7 +11,6 @@ function Posts() {
 
   return (
           <div className="all-posts">
-            <div className="margin"></div>
             <section className="post">
               {/* Upvote Section */}
               <div className="upvote-and-text">
