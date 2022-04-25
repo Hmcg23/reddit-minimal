@@ -3,8 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const toggleMessageSlice = createSlice({
     name: 'toggleMessages',
     initialState: {
-        messages: {
-        }
+        messages: [{text: 'helllo'}, {text: 'hello again'} ]
     },
     reducers: {
         addMessage: (state, action) => {
