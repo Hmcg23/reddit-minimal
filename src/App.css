@@ -80,8 +80,7 @@ button {
 }
 
 .search-icon {
-  padding: 2px;
-  max-width: 8%;
+  max-width: 10%;
   filter: invert(23%) sepia(68%) saturate(2588%) hue-rotate(217deg) brightness(91%) contrast(93%);
 }
 
@@ -95,18 +94,21 @@ button {
   text-align: left;
 }
 
-
+input {
+  padding: 3%;
+  margin: 0 1vw;
+  width: 20vw;
+  border-radius: 1000px;
+  border: 2px solid #2651c6;
+  background-color: #2e2e2e;
+  font-size: 1.2vw;
+}
 
 /* Reddit Post */
 
-.all-posts {
-  display: flex;
-  flex-direction: column;
-
-}
-
 .post {
   display: flex;
+  flex-direction: column;
   background-color: rgba(38, 81, 198, 0.792);
   margin: 1vw;
   padding: 2vw;
@@ -134,9 +136,13 @@ button {
   text-align: left;
 }
 
+.upvote-and-text {
+  display: flex;
+}
+
 .post:hover {
   box-shadow: 0 25px 20px rgba(0, 0, 0, 0.3);
-  background-color: rgba(38, 81, 198, 0.95);
+  background-color: rgba(38, 81, 198, 0.82);
 }
 
 /* Upvote System */
@@ -145,6 +151,7 @@ button {
   display: flex;
   flex-direction: column;
   text-align: center;
+  max-height: 30%;
 }
 
 .up-arrow, .down-arrow {
@@ -154,7 +161,6 @@ button {
   padding: 0.5vw;
   transition: 0.2s ease-in-out 0s;
 }
-
 
 .down-arrow {
   transform: rotateZ(180deg);
@@ -168,7 +174,10 @@ button {
 .user-info {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1vw;
 }
+
+/* Message Icon and Other */
 
 .message-icon {
   max-width: 30%;
@@ -220,7 +229,7 @@ main {
 }
 
 .subreddit:hover, button:hover {
-  background-color: rgba(38, 81, 198, 0.95);
+  background-color: rgba(38, 81, 198, 0.82);
   box-shadow: 0 25px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -229,6 +238,31 @@ main {
 
 .no-posts {
   width: 80%;
+}
+
+/* Comments Section */
+
+.comment {
+  background-color: #1f40998e;
+  margin-bottom: 1vw;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out 0s;
+}
+
+.comment-info {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  padding: 0 1vw;
+}
+
+.comment p {
+  text-align: left;
+  padding: 1vw
+}
+
+.comment:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 /* Media Queries - Keep Last */

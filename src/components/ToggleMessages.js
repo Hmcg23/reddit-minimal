@@ -19,12 +19,14 @@ function ToggleMessages() {
 ];
 
   return (
-      messages.map(msg => {
+    messages.map(msg => {
     return (
-    <div>
-        <h1>{msg.user}</h1>
+    <div className="comment">
+        <div className="comment-info">
+            <h3>{msg.user}</h3>
+            <h3>{`${msg.timeSincePosted} hours ago`}</h3>            
+        </div>
         <p>{msg.text}</p>
-        <h3>{`${msg.timeSincePosted} hours ago`}</h3>
     </div>
     )
 })
