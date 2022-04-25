@@ -1,26 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.css';
 import arrow from '../images/arrow.svg';
 import messageicon from '../images/messageicon.svg'
 import bgimage from '../images/bgimage.jpeg'
-import ToggleMessages from '../features/messages/ToggleMessages';
-import BlankMessage from '../features/messages/BlankMessage';
+import ToggleMessages from './ToggleMessages';
 
 
 function Posts() {
-
-
-const messages = (messagesToggled) => {
-  if (messagesToggled === false) {
-    console.log(messagesToggled);
-    return <BlankMessage />
-    
-  } else if (messagesToggled === true) {
-    console.log(messagesToggled);
-    return <ToggleMessages />
-    
-  }
-}
+  const [comments, setComments] = useState("");
 
   return (
           <div className="all-posts">
@@ -43,13 +30,18 @@ const messages = (messagesToggled) => {
                 <p>fenyx</p>
                 <p>2 days ago</p>
                 <div className="messages">
-                  <img src={messageicon} alt="message icon" className="message-icon" onClick={() => {}} />
+                  <img src={messageicon} alt="message icon" className="message-icon" onClick={() => { !comments ? setComments(<ToggleMessages />) : setComments("")}} />
                   <p>3 comments</p>
                 </div>
               </div>
-              {messages(true)}
+              {comments}
             </div>
             </section>
+
+
+
+
+
             {/* Second Post */}
             <section className="post">
               <div className="upvote-system">
