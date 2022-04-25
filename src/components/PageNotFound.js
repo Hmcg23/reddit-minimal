@@ -8,7 +8,7 @@ function PageNotFound() {
   return (
     <section className="no-posts">
         <h1>No Posts Matching "{"example"}"</h1>
-        <button onClick={() => navigate.goBack()}><h2>Go Back</h2></button>
+        <button onClick={() => navigate('/')}><h2>Go Back</h2></button>
     </section>
   );
 }

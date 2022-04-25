@@ -31,7 +31,7 @@ function Posts() {
                     <p>2 days ago</p>
                     <div className="messages">
                       <img src={messageicon} alt="message icon" className="message-icon" onClick={() => { !comments ? setComments(<ToggleMessages />) : setComments("")}} />
-                      <p>3 comments</p>
+                      <p>3</p>
                     </div>
                   </div>
                 </div>                
@@ -65,7 +65,7 @@ function Posts() {
                     <p>1 month ago</p>
                     <div className="messages">
                       <img src={messageicon} alt="message icon" className="message-icon" />
-                      <p>244 comments</p>   
+                      <p>244</p>   
                     </div>
                   </div>          
                 </div>                
