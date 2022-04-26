@@ -5,13 +5,38 @@ import messageicon from '../images/messageicon.svg'
 import bgimage from '../images/bgimage.jpeg'
 import ToggleMessages from './ToggleMessages';
 
+const posts = [
+  { id: '1', text: 'This first post is about React' },
+  { id: '2', text: 'This next post is about Preact' },
+  { id: '3', text: 'We have yet another React post!' },
+  { id: '4', text: 'This is the fourth and final post' },
+];
+
+const filterPosts = (posts, query) => {
+  if (!query) {
+      return posts;
+  }
+
+  return posts.filter((post) => {
+      const postText = post.text.toLowerCase();
+      return postText.includes(query);
+  });
+};
+
 
 function Posts() {
   const [comments, setComments] = useState("");
+  const { search } = window.location;
+  const query = new URLSearchParams(search).get('search');
+  const filteredPosts = filterPosts(posts, query);
+
+
 
   return (
           <div className="all-posts">
-            <section className="post">
+            {
+              filteredPosts.map(post => (
+                <section className="post" key={post.id}>
               {/* Upvote Section */}
               <div className="upvote-and-text">
                 <div className="upvote-system">
@@ -22,7 +47,7 @@ function Posts() {
                 {/* Post Text */}
                 <div className="post-info">
                   <div className="post-text">
-                    <h2>Top 10 greatest <a href="https://scratch.mit.edu/projects/677407763/" target="_blank" rel="noreferrer">scratch intros</a></h2>
+                    <h2>{post.text}</h2>
                     <hr />            
                   </div>
                     {/* User Info and Other */}
@@ -39,6 +64,9 @@ function Posts() {
 
               {comments}
             </section>
+              ))
+            }
+            
 
 
 

@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../src/App.css';
 import searchicon from '../images/searchicon.svg';
 import redditlogo from '../images/redditlogo.png';
+import { useNavigate } from 'react-router-dom';
 
-function Nav() {
-  const [searchText, setSearchText] = useState("");
 
-  const handleChange = (e) => {
+function Nav({searchQuery, setSearchQuery}) {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    setSearchQuery(e.target.value);
+    console.log(searchQuery);
+    navigate(`?search=${searchQuery}`)
     e.preventDefault();
-    setSearchText(e.target.value);
-    console.log(e.target.value);
 
   }
 
@@ -21,7 +24,9 @@ function Nav() {
         </div>
         <div className="right-side">
           <img src={searchicon} alt="search icon" className="search-icon" />
-            <input type="text" placeholder="Search" onChange={handleChange} value={searchText} />              
+          <form action="/" method="get" onSubmit={handleSubmit}>
+            <input type="text" placeholder="Search" name="search" value={searchQuery} onInput={(e) => { setSearchQuery(e.target.value) }} />
+          </form>
         </div>
     </nav>
   );

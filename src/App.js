@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 // components
 import PageNotFound from './components/PageNotFound';
@@ -9,11 +9,17 @@ import Posts from './components/Posts';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
+  const { search } = window.location;
+  const query = new URLSearchParams(search).get('s');
+  const [searchQuery, setSearchQuery] = useState(query || '');
+
   return (
     <Router>
       <div className="App">
         <body>
-          <Nav />
+          <Nav
+          searchQuery={searchQuery} setSearchQuery={setSearchQuery}
+          />
           <main>
             <Routes>
               <Route path="/" element={<Posts />} />
