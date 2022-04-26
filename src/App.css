@@ -106,6 +106,10 @@ input {
 
 /* Reddit Post */
 
+.all-posts {
+  width: 80%;
+}
+
 .post {
   display: flex;
   flex-direction: column;
@@ -198,14 +202,11 @@ main {
   display: flex;
 }
 
-.subreddit-section {
-  max-width: 20%;  
-}
 
 .subreddit {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: rgba(38, 81, 198, 0.792);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
   border-radius: 1vw;
@@ -216,12 +217,13 @@ main {
 
 .subreddit h2 {
   text-decoration: none;
+  font-size: 1.2vw;
 }
 
 .subreddit-logo {
   max-width: 15%;
   border-radius: 100%;
-  padding: 0 0.7vw;
+  padding: 0.7vw;
 }
 
 .subreddit:hover, button:hover {

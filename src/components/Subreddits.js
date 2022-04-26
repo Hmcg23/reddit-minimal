@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import fakeSubredditData from '../fake-data/fakeSubredditData.json';
 
 function Subreddits() {
-    const subredditNames = ['Home', 'r/exampletext', 'r/exampletext', 'r/exampletext', 'r/exampletext', 'r/exampletext', 'r/exampletext', 'r/exampletext', 'r/exampletext'];
 
   return (
         <section className="subreddit-section">
@@ -16,8 +15,8 @@ function Subreddits() {
                         return (
                             <Link to="/pagenotfound" key={name.id}>
                                 <div className="subreddit">
-                                    <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
-                                    <h2>r/{name.subreddit}</h2>
+                                    <img src={name.image} alt="subreddit logo" className="subreddit-logo" />
+                                    <h2>r/{name.subreddit.toLowerCase()}</h2>
                                 </div>
                             </Link>                       
                         )
