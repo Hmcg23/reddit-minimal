@@ -11,9 +11,9 @@ function Subreddits() {
                 <div className="margin-subreddit"></div>
                     <h1>Subreddits</h1>
                     {
-                    subredditNames.map(name => {
+                    subredditNames.map((name, index) => {
                         return (
-                            <Link to="/pagenotfound">
+                            <Link to="/pagenotfound" key={index}>
                                 <div className="subreddit">
                                     <img src={redditlogo} alt="subreddit logo" className="subreddit-logo" />
                                     <h2>{name}</h2>
