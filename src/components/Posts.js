@@ -4,13 +4,8 @@ import arrow from '../images/arrow.svg';
 import messageicon from '../images/messageicon.svg'
 import bgimage from '../images/bgimage.jpeg'
 import ToggleMessages from './ToggleMessages';
-
-const posts = [
-  { id: '1', text: 'This first post is about React' },
-  { id: '2', text: 'This next post is about Preact' },
-  { id: '3', text: 'We have yet another React post!' },
-  { id: '4', text: 'This is the fourth and final post' },
-];
+import fakePostData from '../fake-data/fakePostData.json';
+import fakeCommentData from '../fake-data/fakeCommentData.json';
 
 const filterPosts = (posts, query) => {
   if (!query) {
@@ -28,7 +23,7 @@ function Posts() {
   const [comments, setComments] = useState("");
   const { search } = window.location;
   const query = new URLSearchParams(search).get('search');
-  const filteredPosts = filterPosts(posts, query);
+  const filteredPosts = filterPosts(fakePostData, query);
 
 
 
@@ -41,7 +36,7 @@ function Posts() {
               <div className="upvote-and-text">
                 <div className="upvote-system">
                   <img src={arrow} alt="upvote-arrow" className="up-arrow" />
-                  <b>256</b>
+                  <b>{post.upvotes}</b>
                   <img src={arrow} alt="upvote-arrow" className="down-arrow" />
                 </div>
                 {/* Post Text */}
@@ -52,11 +47,11 @@ function Posts() {
                   </div>
                     {/* User Info and Other */}
                   <div className="user-info">
-                    <p>fenyx</p>
-                    <p>2 days ago</p>
+                    <p>{post.username}</p>
+                    <p>{`${post.timeSincePosted} hours ago`}</p>
                     <div className="messages">
                       <img src={messageicon} alt="message icon" className="message-icon" onClick={() => { !comments ? setComments(<ToggleMessages />) : setComments("")}} />
-                      <p>3</p>
+                      <p>{fakeCommentData.length}</p>
                     </div>
                   </div>
                 </div>                
