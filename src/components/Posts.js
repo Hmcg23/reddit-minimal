@@ -26,39 +26,37 @@ function Posts() {
   const filteredPosts = filterPosts(fakePostData, query);
 
 
-
   return (
           <div className="all-posts">
             {
               filteredPosts.map(post => (
-                <section className="post" key={post.id}>
+                <article className="post" key={post.id}>
               {/* Upvote Section */}
-              <div className="upvote-and-text">
-                <div className="upvote-system">
-                  <img src={arrow} alt="upvote-arrow" className="up-arrow" />
-                  <b>{post.upvotes}</b>
-                  <img src={arrow} alt="upvote-arrow" className="down-arrow" />
-                </div>
-                {/* Post Text */}
-                <div className="post-info">
-                  <div className="post-text">
-                    <h2>{post.text}</h2>
-                    <hr />            
-                  </div>
-                    {/* User Info and Other */}
-                  <div className="user-info">
-                    <p>{post.username}</p>
-                    <p>{`${post.timeSincePosted} hours ago`}</p>
-                    <div className="messages">
-                      <img src={messageicon} alt="message icon" className="message-icon" onClick={() => { !comments ? setComments(<ToggleMessages />) : setComments("")}} />
-                      <p>{fakeCommentData.length}</p>
+                  <section className="upvote-and-text">
+                    <div className="upvote-system">
+                      <img src={arrow} alt="upvote-arrow" className="up-arrow" />
+                      <b>{post.upvotes}</b>
+                      <img src={arrow} alt="upvote-arrow" className="down-arrow" />
                     </div>
-                  </div>
-                </div>                
-              </div>
-
-              {comments}
-            </section>
+                    {/* Post Text */}
+                    <div className="post-info">
+                      <div className="post-text">
+                        <h2>{post.text}</h2>
+                        <hr />            
+                      </div>
+                        {/* User Info and Other */}
+                      <div className="user-info">
+                        <p>{post.username}</p>
+                        <p>{`${post.timeSincePosted} hours ago`}</p>
+                        <div className="messages">
+                          <img src={messageicon} alt="message icon" className="message-icon" onClick={() => { !comments ? setComments(<ToggleMessages />) : setComments("")}} />
+                          <p>{fakeCommentData.length}</p>
+                        </div>
+                      </div>
+                    </div>                
+                  </section>
+                  {comments}
+                </article>
               ))
             }
             

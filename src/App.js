@@ -15,8 +15,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
-        <body>
+        <body className="App">
           <Nav
           searchQuery={searchQuery} setSearchQuery={setSearchQuery}
           />
@@ -28,7 +27,6 @@ function App() {
             <Subreddits />
           </main>
         </body>
-      </div>
     </Router>
   );      
 }

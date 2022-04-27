@@ -8,7 +8,6 @@ function Subreddits() {
 
   return (
         <section className="subreddit-section">
-                <div className="margin-subreddit"></div>
                     <h1>Subreddits</h1>
                     {
                     fakeSubredditData.map((name) => {

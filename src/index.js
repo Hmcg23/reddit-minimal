@@ -12,13 +12,11 @@ const container = document.getElementById('root');
 const root = ReactDOMClient.createRoot(container);
 
 root.render(
-  <body>
     <React.StrictMode>
       <Provider store={store}>
         <App />
       </Provider>        
     </React.StrictMode>    
-  </body>
 );
 
 // If you want your app to work offline and load faster, you can change

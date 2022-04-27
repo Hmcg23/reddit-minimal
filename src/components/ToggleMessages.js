@@ -22,4 +22,11 @@ function ToggleMessages() {
 export default ToggleMessages;
 
 
-
+/* 
+Thought Process:
+- Get the id of the post
+- Get the id of the comments
+- See if they match
+- If they match, only render the comments for that post (only render the comment with that IDs?)
+- If they don't do nothing.
+*/
