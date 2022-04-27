@@ -21,7 +21,8 @@ function App() {
           />
           <main>
             <Routes>
-              <Route path="/" element={<Posts />} />
+              <Route path="*" element={<Posts />} />
+              <Route path="/home" element={<Posts />} />
               <Route path="/pagenotfound" element={<PageNotFound />} />
             </Routes>
             <Subreddits />

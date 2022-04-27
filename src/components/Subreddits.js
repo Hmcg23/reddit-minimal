@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import redditlogo from '../images/redditlogo.png';
 import { Link } from 'react-router-dom';
 import fakeSubredditData from '../fake-data/fakeSubredditData.json';
 
