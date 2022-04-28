@@ -36,7 +36,7 @@ function Posts() {
   return (
           <div className="all-posts">
             {
-              filteredPosts === null && query !== null ? <PageNotFound /> : filteredPosts.map(post => (
+              filteredPosts === null ? <PageNotFound /> : filteredPosts.map(post => (
                 <article className="post" key={post.id}>
               {/* Upvote Section */}
                   <section className="upvote-and-text">
@@ -49,6 +49,7 @@ function Posts() {
                     <div className="post-info">
                       <div className="post-text">
                         <h2>{post.text}</h2>
+                        {post.isImage === true ? <img src={post.image} alt='post' className="post-image" /> : ''}
                         <hr />            
                       </div>
                         {/* User Info and Other */}

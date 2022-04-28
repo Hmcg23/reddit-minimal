@@ -1,91 +1,241 @@
 [{
-    "id": 1,
-    "text": "Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-    "upvotes": 3163,
-    "username": "htidgewell0",
-    "timeSincePosted": 17
-  }, {
-    "id": 2,
-    "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
-    "upvotes": 8014,
-    "username": "vbabar1",
-    "timeSincePosted": 13
-  }, {
-    "id": 3,
-    "text": "Suspendisse ornare consequat lectus.",
-    "upvotes": 4768,
-    "username": "asavile2",
-    "timeSincePosted": 23
-  }, {
-    "id": 4,
-    "text": "Phasellus sit amet erat.",
-    "upvotes": 5261,
-    "username": "rkmicicki3",
-    "timeSincePosted": 14
-  }, {
-    "id": 5,
-    "text": "Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.",
-    "upvotes": 3276,
-    "username": "rnassau4",
-    "timeSincePosted": 21
-  }, {
-    "id": 6,
-    "text": "Donec dapibus. Duis at velit eu est congue elementum.",
-    "upvotes": 4158,
-    "username": "spethrick5",
-    "timeSincePosted": 4
-  }, {
-    "id": 7,
-    "text": "Praesent blandit.",
-    "upvotes": 6362,
-    "username": "ssadd6",
-    "timeSincePosted": 21
-  }, {
-    "id": 8,
-    "text": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-    "upvotes": 3758,
-    "username": "rfessier7",
-    "timeSincePosted": 19
-  }, {
-    "id": 9,
-    "text": "Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.",
-    "upvotes": 9669,
-    "username": "tgueinn8",
-    "timeSincePosted": 15
-  }, {
-    "id": 10,
-    "text": "In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh.",
-    "upvotes": 881,
-    "username": "callmark9",
-    "timeSincePosted": 10
-  }, {
-    "id": 11,
-    "text": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-    "upvotes": 6223,
-    "username": "kabdiea",
-    "timeSincePosted": 12
-  }, {
-    "id": 12,
-    "text": "Proin interdum mauris non ligula pellentesque ultrices.",
-    "upvotes": 5489,
-    "username": "pburgisib",
-    "timeSincePosted": 17
-  }, {
-    "id": 13,
-    "text": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante.",
-    "upvotes": 6913,
-    "username": "chisec",
-    "timeSincePosted": 19
-  }, {
-    "id": 14,
-    "text": "Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum.",
-    "upvotes": 6367,
-    "username": "cspinnaced",
-    "timeSincePosted": 11
-  }, {
-    "id": 15,
-    "text": "Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.",
-    "upvotes": 4087,
-    "username": "ptuddalle",
-    "timeSincePosted": 17
-  }]
+  "id": 1,
+  "text": "Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
+  "upvotes": 9038,
+  "username": "ccockshoot0",
+  "timeSincePosted": 14,
+  "image": "http://dummyimage.com/223x100.png/5fa2dd/ffffff",
+  "isImage": false
+}, {
+  "id": 2,
+  "text": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+  "upvotes": 6752,
+  "username": "kgrisley1",
+  "timeSincePosted": 16,
+  "image": "http://dummyimage.com/224x100.png/cc0000/ffffff",
+  "isImage": true
+}, {
+  "id": 3,
+  "text": "Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.",
+  "upvotes": 9789,
+  "username": "iwolfindale2",
+  "timeSincePosted": 9,
+  "image": "http://dummyimage.com/161x100.png/5fa2dd/ffffff",
+  "isImage": false
+}, {
+  "id": 4,
+  "text": "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+  "upvotes": 1958,
+  "username": "esteely3",
+  "timeSincePosted": 16,
+  "image": "http://dummyimage.com/128x100.png/5fa2dd/ffffff",
+  "isImage": false
+}, {
+  "id": 5,
+  "text": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis.",
+  "upvotes": 9,
+  "username": "sdiable4",
+  "timeSincePosted": 10,
+  "image": "http://dummyimage.com/242x100.png/ff4444/ffffff",
+  "isImage": true
+}, {
+  "id": 6,
+  "text": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst.",
+  "upvotes": 8061,
+  "username": "wbiernat5",
+  "timeSincePosted": 23,
+  "image": "http://dummyimage.com/119x100.png/dddddd/000000",
+  "isImage": false
+}, {
+  "id": 7,
+  "text": "Quisque porta volutpat erat.",
+  "upvotes": 985,
+  "username": "cbarnsdall6",
+  "timeSincePosted": 23,
+  "image": "http://dummyimage.com/122x100.png/5fa2dd/ffffff",
+  "isImage": true
+}, {
+  "id": 8,
+  "text": "Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
+  "upvotes": 3249,
+  "username": "dthurman7",
+  "timeSincePosted": 24,
+  "image": "http://dummyimage.com/225x100.png/cc0000/ffffff",
+  "isImage": false
+}, {
+  "id": 9,
+  "text": "In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt.",
+  "upvotes": 3723,
+  "username": "agresley8",
+  "timeSincePosted": 20,
+  "image": "http://dummyimage.com/149x100.png/dddddd/000000",
+  "isImage": false
+}, {
+  "id": 10,
+  "text": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.",
+  "upvotes": 2260,
+  "username": "dmccarroll9",
+  "timeSincePosted": 16,
+  "image": "http://dummyimage.com/238x100.png/dddddd/000000",
+  "isImage": false
+}, {
+  "id": 11,
+  "text": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+  "upvotes": 3945,
+  "username": "dmatonina",
+  "timeSincePosted": 19,
+  "image": "http://dummyimage.com/238x100.png/dddddd/000000",
+  "isImage": true
+}, {
+  "id": 12,
+  "text": "Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat.",
+  "upvotes": 9068,
+  "username": "gdonahueb",
+  "timeSincePosted": 16,
+  "image": "http://dummyimage.com/245x100.png/cc0000/ffffff",
+  "isImage": false
+}, {
+  "id": 13,
+  "text": "In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+  "upvotes": 5484,
+  "username": "sbelkc",
+  "timeSincePosted": 9,
+  "image": "http://dummyimage.com/128x100.png/ff4444/ffffff",
+  "isImage": false
+}, {
+  "id": 14,
+  "text": "Proin risus.",
+  "upvotes": 8634,
+  "username": "lfoand",
+  "timeSincePosted": 9,
+  "image": "http://dummyimage.com/238x100.png/5fa2dd/ffffff",
+  "isImage": true
+}, {
+  "id": 15,
+  "text": "Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti.",
+  "upvotes": 5757,
+  "username": "swellwoode",
+  "timeSincePosted": 17,
+  "image": "http://dummyimage.com/214x100.png/5fa2dd/ffffff",
+  "isImage": true
+}, {
+  "id": 16,
+  "text": "Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede.",
+  "upvotes": 4924,
+  "username": "mcrosthwaitef",
+  "timeSincePosted": 1,
+  "image": "http://dummyimage.com/185x100.png/dddddd/000000",
+  "isImage": true
+}, {
+  "id": 17,
+  "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+  "upvotes": 241,
+  "username": "ljendruschg",
+  "timeSincePosted": 7,
+  "image": "http://dummyimage.com/242x100.png/ff4444/ffffff",
+  "isImage": false
+}, {
+  "id": 18,
+  "text": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue.",
+  "upvotes": 6458,
+  "username": "afidellh",
+  "timeSincePosted": 19,
+  "image": "http://dummyimage.com/144x100.png/5fa2dd/ffffff",
+  "isImage": true
+}, {
+  "id": 19,
+  "text": "Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+  "upvotes": 651,
+  "username": "gamotti",
+  "timeSincePosted": 18,
+  "image": "http://dummyimage.com/149x100.png/5fa2dd/ffffff",
+  "isImage": true
+}, {
+  "id": 20,
+  "text": "Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+  "upvotes": 185,
+  "username": "jbloyesj",
+  "timeSincePosted": 8,
+  "image": "http://dummyimage.com/113x100.png/5fa2dd/ffffff",
+  "isImage": true
+}, {
+  "id": 21,
+  "text": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero.",
+  "upvotes": 9033,
+  "username": "aglencrosk",
+  "timeSincePosted": 8,
+  "image": "http://dummyimage.com/157x100.png/cc0000/ffffff",
+  "isImage": true
+}, {
+  "id": 22,
+  "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+  "upvotes": 5241,
+  "username": "bscrinel",
+  "timeSincePosted": 12,
+  "image": "http://dummyimage.com/197x100.png/dddddd/000000",
+  "isImage": true
+}, {
+  "id": 23,
+  "text": "Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl.",
+  "upvotes": 6487,
+  "username": "galdrenm",
+  "timeSincePosted": 11,
+  "image": "http://dummyimage.com/132x100.png/5fa2dd/ffffff",
+  "isImage": true
+}, {
+  "id": 24,
+  "text": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh.",
+  "upvotes": 3195,
+  "username": "cstouten",
+  "timeSincePosted": 16,
+  "image": "http://dummyimage.com/248x100.png/ff4444/ffffff",
+  "isImage": false
+}, {
+  "id": 25,
+  "text": "Nulla nisl. Nunc nisl.",
+  "upvotes": 6655,
+  "username": "kwolfito",
+  "timeSincePosted": 7,
+  "image": "http://dummyimage.com/239x100.png/cc0000/ffffff",
+  "isImage": true
+}, {
+  "id": 26,
+  "text": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+  "upvotes": 8382,
+  "username": "pbreitp",
+  "timeSincePosted": 11,
+  "image": "http://dummyimage.com/173x100.png/dddddd/000000",
+  "isImage": true
+}, {
+  "id": 27,
+  "text": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.",
+  "upvotes": 2759,
+  "username": "fpawlikq",
+  "timeSincePosted": 17,
+  "image": "http://dummyimage.com/184x100.png/dddddd/000000",
+  "isImage": false
+}, {
+  "id": 28,
+  "text": "Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.",
+  "upvotes": 2115,
+  "username": "kchalonerr",
+  "timeSincePosted": 21,
+  "image": "http://dummyimage.com/197x100.png/dddddd/000000",
+  "isImage": true
+}, {
+  "id": 29,
+  "text": "Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna.",
+  "upvotes": 8660,
+  "username": "bgrieswoods",
+  "timeSincePosted": 16,
+  "image": "http://dummyimage.com/164x100.png/dddddd/000000",
+  "isImage": true
+}, {
+  "id": 30,
+  "text": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+  "upvotes": 3952,
+  "username": "deneast",
+  "timeSincePosted": 22,
+  "image": "http://dummyimage.com/226x100.png/5fa2dd/ffffff",
+  "isImage": false
+}]

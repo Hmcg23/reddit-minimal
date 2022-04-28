@@ -85,6 +85,10 @@ button {
   filter: invert(23%) sepia(68%) saturate(2588%) hue-rotate(217deg) brightness(91%) contrast(93%);
 }
 
+.search-icon:hover {
+  cursor: pointer;
+}
+
 .text {
   padding: 0.1vw 7vw;
   font-weight: 300;
@@ -133,7 +137,7 @@ input {
 }
 
 .post-image {
-  max-width: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 
