@@ -2,7 +2,7 @@
 
 # 📘 Reddit Client
 
-## **A Reddit clone that simplifies the Reddit experience. This is also Codecademy Portfolio Project.**
+## **A Reddit clone that simplifies the Reddit experience.**
 
 <img src="./src/images/appscreenshot.png"/>
 
