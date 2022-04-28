@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import '../App.css';
 import arrow from '../images/arrow.svg';
 import messageicon from '../images/messageicon.svg'
-import bgimage from '../images/bgimage.jpeg'
 import ToggleMessages from './ToggleMessages';
 import fakePostData from '../fake-data/fakePostData.json';
 import fakeCommentData from '../fake-data/fakeCommentData.json';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import PageNotFound from './PageNotFound';
 
 export const filterPosts = (posts, query) => {
