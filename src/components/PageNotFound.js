@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
+import { getSubredditData } from '../features/redditapi/redditAPI';
 
 function PageNotFound() {
   const navigate = useNavigate();
@@ -18,8 +19,6 @@ function PageNotFound() {
           } else {
             navigate('/home')
           }
-          console.log(search);
-          console.log(query)
           }}><h2>Go Back</h2></button>
     </section>
   );
