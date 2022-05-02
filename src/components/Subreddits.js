@@ -5,11 +5,8 @@ import redditlogo from '../images/redditlogo.png';
 
 function Subreddits({article}) {
 
-
-    console.log(article.icon_img);
-
   return (
-    <Link to="/pagenotfound">
+    <Link to={article.display_name.toLowerCase()}>
         <div className="subreddit">
             <img src={article.icon_img !== "" && article.icon_img !== null ? article.icon_img : redditlogo} alt="subreddit logo" className="subreddit-logo" />
             <h2>{article.display_name}</h2>

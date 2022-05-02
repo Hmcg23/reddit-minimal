@@ -14,26 +14,23 @@ function App() {
   // useState hook
   const [searchQuery, setSearchQuery] = useState(query || '');
   const [articles, setArticles] = useState([]);
-  const [subreddit, setSubreddits] = useState('subreddits');
+  const [subreddits, setSubreddits] = useState('subreddits');
 
   // api call
   useEffect(() => {
-     fetch('https://www.reddit.com/subreddits.json')
-     .then(response => {
-         if (response.status !== 200) {
-             console.log('ERROR');
-             return;
-         }
-
-         response.json()
-         .then(jsonResponse => {
-             if (jsonResponse != null) {
-                 setArticles(jsonResponse.data.children);
-             }
-         })
-     })
-  }, []);
-
+  fetch(`https://www.reddit.com/${subreddits}.json`)
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error("Request Failed!")
+  }, networkError => console.log(networkError.message))
+  .then(jsonResponse => {
+    if (jsonResponse !== null) {
+      setArticles(jsonResponse.data.children);
+    }
+  })
+  }, [subreddits]);
 
   return (
           <Router>
@@ -43,7 +40,7 @@ function App() {
               />
               <main>
                 <Routes>
-                  <Route path="*" element={<Posts />} />
+                  <Route path="/" element={<Posts />} />
                   <Route path="/home" element={<Posts />} />
                   <Route path="/pagenotfound" element={<PageNotFound />} />
                 </Routes>
