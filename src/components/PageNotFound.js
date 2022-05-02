@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
-import { getSubredditData } from '../features/redditapi/redditAPI';
 
 function PageNotFound() {
   const navigate = useNavigate();

@@ -208,6 +208,11 @@ main {
   display: flex;
 }
 
+.subreddit-section {
+  width: 20%;
+}
+
+
 .subreddit {
   display: flex;
   align-items: center;
@@ -226,7 +231,7 @@ main {
 }
 
 .subreddit-logo {
-  max-width: 15%;
+  max-width: 20%;
   border-radius: 100%;
   padding: 0.7vw;
 }
@@ -240,7 +245,7 @@ main {
 /* No Posts Found */
 
 .no-posts {
-  width: 100%;
+  width: 80%;
 }
 
 /* Comments Section */

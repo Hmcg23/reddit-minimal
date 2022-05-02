@@ -11,28 +11,28 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   const { search } = window.location;
   const query = new URLSearchParams(search).get('s');
+  // useState hook
   const [searchQuery, setSearchQuery] = useState(query || '');
-  const [subreddits, setSubreddits] = useState('');
+  const [articles, setArticles] = useState([]);
+  const [subreddit, setSubreddits] = useState('subreddits');
 
+  // api call
   useEffect(() => {
-    const url = 'https://www.reddit.com/r/';
-    const subreddit = 'home';
-    const endpoint = `${url}${subreddit}.json`;
-    // fetch request
-    fetch(endpoint)
-    .then(response => {
-        if (response.ok) {
-            return response.json();
-        }
-        throw new Error('Request Failed!');
-    }, networkError => {
-        console.log(networkError.message);
-    })
-    .then(jsonResponse => {
-      // set articles to reddit data
-        setSubreddits(jsonResponse.data.children);
-    })
-  },  [subreddits]);
+     fetch('https://www.reddit.com/subreddits.json')
+     .then(response => {
+         if (response.status !== 200) {
+             console.log('ERROR');
+             return;
+         }
+
+         response.json()
+         .then(jsonResponse => {
+             if (jsonResponse != null) {
+                 setArticles(jsonResponse.data.children);
+             }
+         })
+     })
+  }, []);
 
 
   return (
@@ -47,10 +47,17 @@ function App() {
                   <Route path="/home" element={<Posts />} />
                   <Route path="/pagenotfound" element={<PageNotFound />} />
                 </Routes>
-                <Subreddits />
+                <section className="subreddit-section">
+                  <h1>Subreddits</h1>
+                { 
+                articles !== null ? articles.map((article, index) => (
+                  <Subreddits key={index} article={article.data} />
+                )) :''
+                }                  
+                </section>
+
               </main>
             </div>
-
           </Router>
   );      
 }
