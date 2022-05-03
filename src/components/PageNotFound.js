@@ -6,18 +6,14 @@ function PageNotFound() {
   const navigate = useNavigate();
   const { search } = window.location;
   const query = new URLSearchParams(search).get('search');
-  const fullUrl = window.location.href;
   
 
   return (
     <section className="no-posts">
         <h1>No Posts Matching "{query}"</h1>
-        <button onClick={() => {
-          if (fullUrl.includes('home')) {
-            navigate('/')
-          } else {
-            navigate('/home')
-          }
+        <button onClick={(e) => {
+          e.preventDefault();
+          navigate(window.location.pathname);
           }}><h2>Go Back</h2></button>
     </section>
   );

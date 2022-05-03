@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
-import { Link } from 'react-router-dom';
 import redditlogo from '../images/redditlogo.png';
 
 function Subreddits() {
@@ -26,22 +25,15 @@ function Subreddits() {
 
   return (
     articles.map((article, index) => (
-      <Link to={article.data.display_name.toLowerCase()} key={index}>
-        <div className="subreddit">
+        <div className="subreddit" onClick={(e) => {
+          e.preventDefault();
+          window.location.pathname = article.data.display_name.toLowerCase();
+          }}>
             <img src={article.data.icon_img !== "" && article.data.icon_img !== null ? article.data.icon_img : redditlogo} alt="subreddit logo" className="subreddit-logo" />
             <h2>{article.data.display_name}</h2>
-            {console.log(article)}
         </div>        
-      </Link>
-
     ))
   );
 }
 
 export default Subreddits;
-
-/*
-                articles !== null ? articles.map((article, index) => (
-                  <Subreddits key={index} article={article.data} />
-                )) :''
-*/

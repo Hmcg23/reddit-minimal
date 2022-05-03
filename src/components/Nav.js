@@ -12,7 +12,6 @@ function Nav({searchQuery, setSearchQuery}) {
     setSearchQuery(e.target.value);
     console.log(searchQuery);
     navigate(`?search=${searchQuery}`)
-    setSearchQuery('');
     e.preventDefault();
 
   }
