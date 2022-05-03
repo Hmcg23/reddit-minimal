@@ -209,9 +209,8 @@ main {
 }
 
 .subreddit-section {
-  width: 20%;
+  max-width: 20%;
 }
-
 
 .subreddit {
   display: flex;
@@ -281,9 +280,6 @@ main {
 
 /* Media Queries - Keep Last */
 @media screen and (max-width: 1200px) {
-  .subreddit-section {
-    max-width: 30%;
-  }
   .subreddit {
     padding: 10px;
     font-size: 1.5vw;
@@ -328,7 +324,6 @@ main {
   }
   .subreddit-section {
     max-width: 50%;
-    text-align: center;
   }
   .subreddit {
     transform: translateX(50%);

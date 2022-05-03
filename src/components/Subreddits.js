@@ -25,7 +25,7 @@ function Subreddits() {
 
   return (
     articles.map((article, index) => (
-        <div className="subreddit" onClick={(e) => {
+        <div className="subreddit" key={index} onClick={(e) => {
           e.preventDefault();
           window.location.pathname = article.data.display_name.toLowerCase();
           }}>

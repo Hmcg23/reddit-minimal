@@ -30,12 +30,9 @@ function App(props) {
     .then(jsonResponse => {
       if (jsonResponse !== null) {
         setSubredditData(jsonResponse.data.children);
-        console.log(subreddit);
       }
     })
     }, [subreddit, test]);
-
-    console.log(test);
 
   return (
           <Router>
