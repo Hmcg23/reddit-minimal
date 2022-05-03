@@ -13,12 +13,11 @@ function App() {
   const query = new URLSearchParams(search).get('s');
   // useState hook
   const [searchQuery, setSearchQuery] = useState(query || '');
-  const [articles, setArticles] = useState([]);
-  const [subreddits, setSubreddits] = useState('subreddits');
+  const [subredditData, setSubredditData] = useState('subreddits');
 
   // api call
   useEffect(() => {
-  fetch(`https://www.reddit.com/${subreddits}.json`)
+  fetch(`https://www.reddit.com/home.json`)
   .then(response => {
     if (response.ok) {
       return response.json();
@@ -27,10 +26,10 @@ function App() {
   }, networkError => console.log(networkError.message))
   .then(jsonResponse => {
     if (jsonResponse !== null) {
-      setArticles(jsonResponse.data.children);
+      setSubredditData(jsonResponse.data.children)
     }
   })
-  }, [subreddits]);
+  }, [subredditData]);
 
   return (
           <Router>
@@ -46,11 +45,7 @@ function App() {
                 </Routes>
                 <section className="subreddit-section">
                   <h1>Subreddits</h1>
-                { 
-                articles !== null ? articles.map((article, index) => (
-                  <Subreddits key={index} article={article.data} />
-                )) :''
-                }                  
+                  <Subreddits />
                 </section>
 
               </main>

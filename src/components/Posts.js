@@ -24,7 +24,7 @@ export const filterPosts = (posts, query) => {
 };
 
 
-function Posts(props) {
+function Posts({subredditData}) {
   const [comments, setComments] = useState("");
   const { search } = window.location;
   const query = new URLSearchParams(search).get('search');
