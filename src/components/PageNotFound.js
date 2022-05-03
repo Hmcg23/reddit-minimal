@@ -1,9 +1,7 @@
 import React from 'react';
 import '../App.css';
-import { useNavigate } from 'react-router-dom';
 
 function PageNotFound() {
-  const navigate = useNavigate();
   const { search } = window.location;
   const query = new URLSearchParams(search).get('search');
   
@@ -13,8 +11,8 @@ function PageNotFound() {
         <h1>No Posts Matching "{query}"</h1>
         <button onClick={(e) => {
           e.preventDefault();
-          navigate(window.location.pathname);
-          }}><h2>Go Back</h2></button>
+          window.location = '/home'
+          }}><h2>Go Home</h2></button>
     </section>
   );
 }

@@ -31,15 +31,7 @@ function Posts({subredditData}) {
   return (
           <div className="all-posts">
             {
-              filteredPosts === null ?
-              <section className="no-posts">
-                <h1>No Posts Matching "{query}"</h1>
-                <button onClick={(e) => {
-                  e.preventDefault();
-                  window.location = '/home';
-                  }}><h2>Go Home</h2></button>
-              </section>
-              : 
+              filteredPosts === null ? <PageNotFound /> : 
               filteredPosts.map((post, index) => (
                 <article className="post" key={index}>
                   {/* Upvote Section */}

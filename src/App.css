@@ -225,6 +225,10 @@ main {
   transition: 0.2s ease-in-out 0s;
 }
 
+.subreddit:hover {
+  cursor: pointer;
+}
+
 .subreddit h2 {
   text-decoration: none;
   font-size: 1.2vw;
