@@ -1,38 +1,55 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../App.css';
 import arrow from '../images/arrow.svg';
 import messageicon from '../images/messageicon.svg'
 import ToggleMessages from './ToggleMessages';
 import PageNotFound from './PageNotFound';
+import Subreddits from './Subreddits';
+
 
 export const filterPosts = (posts, query) => {
   if (!query) {
       return posts;
   }
 
-  const filteredPosts  = posts.filter((post) => {
-      const postText = post.data.title.toLowerCase();
-      return postText.includes(query);
-  });
-  if (filteredPosts.length === 0 ) {
-    return null;
-  } else {
-    return filteredPosts;
-  }
+  const filteredPosts  = posts.filter(post => (
+    post.data.title.toLowerCase().includes(query)
+  ));
+  console.log(filteredPosts);
+  return filteredPosts
 };
 
 
-function Posts({subredditData}) {
+function Posts() {
   const [comments, setComments] = useState("");
+  const [subredditData, setSubredditData] = useState()
   const { search } = window.location;
   const query = new URLSearchParams(search).get('search');
   const filteredPosts = filterPosts(subredditData, query);
+  const subredditName = window.location.pathname
+
+  useEffect(() => {
+    fetch(`https://www.reddit.com/r${subredditName}.json`)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error("Request Failed!")
+    }, networkError => console.log(networkError.message))
+    .then(jsonResponse => {
+      if (jsonResponse !== null) {
+        setSubredditData(jsonResponse.data.children);        
+      }
+    })
+    }, [subredditName]);
+
+    console.log(filteredPosts);
 
   return (
+    <main>
           <div className="all-posts">
             {
-              filteredPosts === null ? <PageNotFound /> : 
-              filteredPosts.map((post, index) => (
+              filteredPosts === undefined ? <PageNotFound /> : filteredPosts.map((post, index) => (
                 <article className="post" key={index}>
                   {/* Upvote Section */}
                   <section className="upvote-and-text">
@@ -64,6 +81,11 @@ function Posts({subredditData}) {
               ))
             }
           </div>
+          <section className="subreddit-section">
+                <h1>Subreddits</h1>
+                <Subreddits />
+          </section>
+  </main>
 );
 }
 

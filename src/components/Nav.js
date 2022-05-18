@@ -10,9 +10,7 @@ function Nav({searchQuery, setSearchQuery}) {
 
   const handleSubmit = (e) => {
     setSearchQuery(e.target.value);
-    console.log(searchQuery);
     navigate(`?search=${searchQuery}`)
-    setSearchQuery('');
     e.preventDefault();
 
   }
