@@ -27,14 +27,11 @@ function Posts() {
   const query = new URLSearchParams(search).get('search');
   const filteredPosts = filterPosts(subredditData, query);
   let subredditName = window.location.pathname;
-  
-  if (subredditName === undefined) {
-    subredditName = "/home"
-  }
   useEffect(() => {
-    fetch(`https://www.reddit.com/r${subredditName}.json`)
+    fetch(`https://www.reddit.com/r${subredditName === '/' ? '/home' : subredditName}.json`)
     .then(response => {
       if (response.ok) {
+        console.log('Subreddit Name: ' + subredditName);
         return response.json();
       }
       throw new Error("Request Failed!")
@@ -45,13 +42,11 @@ function Posts() {
       }
     })
     }, [subredditName]);
-
-    console.log(filteredPosts);
-
   return (
     <main>
           <div className="all-posts">
             {
+              
               filteredPosts === undefined ? <PageNotFound /> : filteredPosts.map((post, index) => (
                 <article className="post" key={index}>
                   {/* Upvote Section */}
