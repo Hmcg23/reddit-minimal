@@ -26,8 +26,11 @@ function Posts() {
   const { search } = window.location;
   const query = new URLSearchParams(search).get('search');
   const filteredPosts = filterPosts(subredditData, query);
-  const subredditName = window.location.pathname
-
+  let subredditName = window.location.pathname;
+  
+  if (subredditName === undefined) {
+    subredditName = "/home"
+  }
   useEffect(() => {
     fetch(`https://www.reddit.com/r${subredditName}.json`)
     .then(response => {

@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 // components
-import Subreddits from './components/Subreddits';
 import Nav from './components/Nav';
 import Posts from './components/Posts';
 // react router
